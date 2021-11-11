@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello there welcome to Pizza shop</h1>
+<!--<p><%#= @pizzas.to_json %></p>-->
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>small price</th>
+    <th>large price</th>
+    <th>category</th>
+  </tr>
+  </thead>
+  <tbody>
+    <%= render @pizzas, cached: true %>
+  </tbody>
+</table>
+</body>
+</html>
